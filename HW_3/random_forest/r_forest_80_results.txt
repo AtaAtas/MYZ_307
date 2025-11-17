@@ -1,0 +1,56 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 80 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     breast-cancer
+Instances:    286
+Attributes:   10
+              age
+              menopause
+              tumor-size
+              inv-nodes
+              node-caps
+              deg-malig
+              breast
+              breast-quad
+              irradiat
+              Class
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 0.02 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.01 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         280               97.9021 %
+Incorrectly Classified Instances         6                2.0979 %
+Kappa statistic                          0.9494
+Mean absolute error                      0.1721
+Root mean squared error                  0.2175
+Relative absolute error                 41.1517 %
+Root relative squared error             47.5946 %
+Total Number of Instances              286
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.990    0.047    0.980      0.990    0.985      0.950    0.998     0.999     no-recurrence-events
+                 0.953    0.010    0.976      0.953    0.964      0.950    0.998     0.994     recurrence-events
+Weighted Avg.    0.979    0.036    0.979      0.979    0.979      0.950    0.998     0.998
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 199   2 |   a = no-recurrence-events
+   4  81 |   b = recurrence-events
+

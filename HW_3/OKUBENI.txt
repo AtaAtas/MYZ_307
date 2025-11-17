@@ -1,0 +1,5 @@
+Ata Ataş-040230771
+
+ZIP dosyası içerisindeki model isimleri verilmiş 5 dosyada her bir şıktaki ilgili model için (eğer farklı parametrelerle denenmişlerse birden fazla olmak üzere) model dosyaları ve sonuçların kaydedildiği txt dosyaları mevcuttur. Modeller weka içerisinde üzerlerine sağ tıklanıp "save model" denilerek kaydedildi ama daha sonrasında wekada doğrudan bu model dosyalarını açmayı denediğimde açamadım, umarım benden kaynaklıdır ve ödev için sorun teşkil etmez.
+
+Ödev raporu doğrudan ödev dosyası içerisinde HW_3_RAPOR.pdf şeklinde kayıtlıdır. Ödev 3 ile ilgili tüm dosyalarım aynı zamanda şu GitHub linkinde de mevcuttur:

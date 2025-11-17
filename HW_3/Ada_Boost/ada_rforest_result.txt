@@ -1,0 +1,135 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.trees.RandomForest -- -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     breast-cancer
+Instances:    286
+Attributes:   10
+              age
+              menopause
+              tumor-size
+              inv-nodes
+              node-caps
+              deg-malig
+              breast
+              breast-quad
+              irradiat
+              Class
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights:
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S -1155869325 -do-not-check-capabilities
+
+Weight: 3.84
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 431529176 -do-not-check-capabilities
+
+Weight: 3.66
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1761283695 -do-not-check-capabilities
+
+Weight: 1.12
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1749940626 -do-not-check-capabilities
+
+Weight: 1.35
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 892128508 -do-not-check-capabilities
+
+Weight: 0.79
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 155629808 -do-not-check-capabilities
+
+Weight: 0.6
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1429008869 -do-not-check-capabilities
+
+Weight: 0.48
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S -1465154083 -do-not-check-capabilities
+
+Weight: 0.41
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S -138487339 -do-not-check-capabilities
+
+Weight: 0.36
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S -1242363800 -do-not-check-capabilities
+
+Weight: 0.34
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 0.45 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.06 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         280               97.9021 %
+Incorrectly Classified Instances         6                2.0979 %
+Kappa statistic                          0.9494
+Mean absolute error                      0.022
+Root mean squared error                  0.1056
+Relative absolute error                  5.2687 %
+Root relative squared error             23.11   %
+Total Number of Instances              286
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.990    0.047    0.980      0.990    0.985      0.950    0.999     0.999     no-recurrence-events
+                 0.953    0.010    0.976      0.953    0.964      0.950    0.999     0.996     recurrence-events
+Weighted Avg.    0.979    0.036    0.979      0.979    0.979      0.950    0.999     0.998
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 199   2 |   a = no-recurrence-events
+   4  81 |   b = recurrence-events
+
